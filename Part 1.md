@@ -3,7 +3,7 @@
 ## Introduction
 
 > [!IMPORTANT]
-> Attention: Part 2 is available here [Analyzing Hyperion - Part 1: Starting Out](Part%202.md)
+> Attention: Part 2 is available here [Analyzing Hyperion - Part 2: Core Components](Part%202.md)
 
 Hello everyone. this is gocart98. I apologize for my recent inactivity, I've been quite busy preparing for this series.
 
