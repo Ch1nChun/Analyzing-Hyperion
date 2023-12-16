@@ -2,8 +2,7 @@
 
 ## Introduction
 
-> ![IMPORTANT]
->
+> [!IMPORTANT]
 > This is part 2 of the series, if you haven't already, make sure you read [Analyzing Hyperion - Part 1: Starting Out](Part%201.md) first.
 
 Previously, we discussed what Hyperion is and how it differs from traditional anti-cheats.
