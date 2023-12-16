@@ -3,7 +3,8 @@
 ## Introduction
 
 > ![IMPORTANT]
-> Attention: This is part 2 of the series, if you haven't already, make sure you read [Analyzing Hyperion - Part 1: Starting Out](Part%201.md) first.
+>
+> This is part 2 of the series, if you haven't already, make sure you read [Analyzing Hyperion - Part 1: Starting Out](Part%201.md) first.
 
 Previously, we discussed what Hyperion is and how it differs from traditional anti-cheats.
 In this part, we'll analyze their module, learn about the obfuscation techniques they use, examine their initialization routine, and discover how they block the creation of external threads.
