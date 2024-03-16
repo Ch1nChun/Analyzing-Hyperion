@@ -1,18 +1,22 @@
 {
-    "cSpell.words": [
-        "breakpointing",
-        "Byfron",
-        "decompilation",
-        "decompiling",
-        "decryptor",
-        "interruptability",
-        "iret",
-        "kernelbase",
-        "rdata",
-        "Roblox",
-        "syscall",
-        "syscalls",
-        "uintptr",
-        "usermode"
-    ]
+  "cSpell.words": [
+    "breakpointing",
+    "Byfron",
+    "deallocated",
+    "deallocator",
+    "decompilation",
+    "decompiling",
+    "decryptor",
+    "Deleter",
+    "interruptability",
+    "iret",
+    "kernelbase",
+    "pageable",
+    "rdata",
+    "Roblox",
+    "syscall",
+    "syscalls",
+    "uintptr",
+    "usermode"
+  ]
 }
