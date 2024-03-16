@@ -1,10 +1,16 @@
-# Analyzing Hyperion - Part 6: Working Set, RPM Detection, and System Scans
+# Analyzing Hyperion - Part 5: Module Integrity Checks
 
 > [!IMPORTANT]
 > Before I get started,
 > I want to mention that
 > the version of Roblox analyzed in this thread is:
 > **0.607.0.41238** | **version-88cfc23f4e7d4e4b**
+
+[original]: https://v3rm.net/threads/analyzing-byfron-module-integrity-checks.3773/
+
+> [!TIP]
+>
+> This thread is on new v3rm, if you have an account, you can view it here: [original]!
 
 ## Introduction
 
