@@ -249,6 +249,6 @@ this routine that construct the other strings and perform the check.
 ---
 
 - `0x20C98C4`: **constructs the 2nd string**
-- `0x20CF424`: **call to NpenSection**
+- `0x20CF424`: **call to NtOpenSection**
 - `0x20CFB00`: **constructs the 3rd string**
 - `0x20D55B9`: **call to NtOpenSection**
