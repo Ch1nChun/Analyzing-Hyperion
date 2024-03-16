@@ -197,4 +197,11 @@ memory for images and repeat the process for the next image found.
 
 ## Conclusion
 
-...
+In conclusion,
+the scan process
+is simple while being executed in a relatively smart way,
+avoiding the need to scan unpatched modules to keep performance up.
+As a side effect, this could easily lead to the misconception
+that they don't have any module integrity verification.
+This could potentially open a few vectors for hiding patches,
+but that's an exercise for the reader to explore.
