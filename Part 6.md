@@ -1,5 +1,7 @@
 # Analyzing Hyperion Part 6: Working Set, RPM detection, and system scans
 
+[original]: https://v3rm.net/threads/analyzing-byfron-part-6.4941
+
 ## Introduction
 
 > [!IMPORTANT]
