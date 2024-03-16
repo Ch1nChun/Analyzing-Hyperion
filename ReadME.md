@@ -9,6 +9,9 @@ You can't find the original thread on the new v3rm, but there are some other bac
 [Part 2](Part%202.md)
 [Part 3](Part%203.md)
 [Part 4](Part%204.md)
+[Part 5](Part%205.md)
+[Part 6](Part%206.md)
+[Part 7](Part%207.md)
 
 ## Notes
 

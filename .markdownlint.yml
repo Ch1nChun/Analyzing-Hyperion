@@ -1,0 +1,5 @@
+# Annoying when you also have another block quote,
+# which you want to separate.
+no-blanks-blockquote: false
+# Part 6 has a codeblock which has a very long C cast.
+line-length: false
