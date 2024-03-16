@@ -11,10 +11,14 @@
 > One can only guess why this was done,
 > but probably for the memes,
 > considering a P2C named Krampus was recently released.
+
+> [!TIP]
 >
-> Hello everyone! .krampus here.
-> Recently, Hyperion added a few interesting routines that
-> I feel are worth discussing.
+> This thread is on new v3rm, if you have an account, you can view it here: [original]!
+
+Hello everyone! .krampus here.
+Recently, Hyperion added a few interesting routines that
+I feel are worth discussing.
 
 As you probably know by now, Hyperion has added a new check which most
 people refer to as 'Working Set' check.
