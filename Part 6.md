@@ -240,7 +240,7 @@ Now we know that this routine simply checks
 if those 2 device objects or the driver object exist,
 and if so, they perform quite an interesting action.
 
-![missing image]
+![image](assets/images/Part%206/4.png)
 
 At the end of the routine,
 R15 is compared,
