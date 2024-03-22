@@ -24,7 +24,7 @@ I feel are worth discussing.
 
 As you probably know by now, Hyperion has added a new check which most
 people refer to as 'Working Set' check.
-This means that people reading unsynchronized from the memory associate
+This means that people reading un-synchronized from the memory associate
 with the engine will get detected.
 But not many actually know how this is implemented.
 In this article,
@@ -157,14 +157,14 @@ Here's an example where they invoke Hyperion
 to allocate memory and set the custom deallocator:
 
 ```c
-HYPERION_ALLOCATE_WACHED_MEMORY = (unsigned int (__fastcall *)(__int64 *, __int64))qword_4B85B78;
+HYPERION_ALLOCATE_WATCHED_MEMORY = (unsigned int (__fastcall *)(__int64 *, __int64))qword_4B85B78;
 if ( !qword_4B85B78 )
 {
   ((void (__fastcall *)(__int64))HYPERION_ACQUIRE_PTR)(v5);
-  HYPERION_ALLOCATE_WACHED_MEMORY = (unsigned int (__fastcall *)(__int64 *, __int64))qword_4B85B78;
+  HYPERION_ALLOCATE_WATCHED_MEMORY = (unsigned int (__fastcall *)(__int64 *, __int64))qword_4B85B78;
 }
 v20 = 0i64;
-if ( HYPERION_ALLOCATE_WACHED_MEMORY && !HYPERION_ALLOCATE_WACHED_MEMORY(&v20, 0x880i64) )
+if ( HYPERION_ALLOCATE_WATCHED_MEMORY && !HYPERION_ALLOCATE_WATCHED_MEMORY(&v20, 0x880i64) )
 {
   v8 = sub_196FB90(v20);
   v29 = v28;
@@ -199,11 +199,11 @@ on the stack and decrypting it.
 
 The function RVA in the analyzed build is `0x20C3410`.
 
-![missing image]
+![image](assets/images/Part%206/1.png)
 
 This is the assembly code constructing the string.
 After putting a breakpoint at the end of it and checking the stack,
-the string constructed was '\Device\CRIPXNIGGA'.
+the string constructed was `\Device\CRIPXNIGGA`.
 This is where the interesting part begins.
 
 After the decrypted string is written to the stack,
@@ -212,10 +212,10 @@ This is where a call to an interesting function is invoked.
 The said function is actually a manual syscall stub made by Hyperion,
 which calls NtOpenSection.
 
-![missing image]
+![image](assets/images/Part%206/2.png)
 
 The arguments passed are essentially trying to open a section handle
-to this device object called 'CRIPXNIGGA'.
+to this device object called `CRIPXNIGGA`.
 This is where someone could get confused;
 This is a device object,
 not a section object. How is this supposed to work?
@@ -230,12 +230,12 @@ we can see that this means 'STATUS_OBJECT_TYPE_MISMATCH'.
 This essentially tells Hyperion that the object exists
 but fails to create a handle, which was exactly their goal.
 
-![missing image]
+![image](assets/images/Part%206/3.png)
 
 At this point, if this status code matches,
 they set R15 to 0x10 and continue.
 This is actually done 2 more times, but with different strings.
-Those strings are: '\Driver\NEEEEGRO' and '\Device\test121'.
+Those strings are: `\Driver\NEEEEGRO` and `\Device\test121`.
 Now we know that this routine simply checks
 if those 2 device objects or the driver object exist,
 and if so, they perform quite an interesting action.
